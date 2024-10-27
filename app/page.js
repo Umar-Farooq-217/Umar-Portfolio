@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa6";
 import './globals.css'
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
           <h1 className='text-5xl font-bold font-serif'>Umar Farooq</h1>
           <p className="text-xl font-bold font-sans">Mern Stack Developer</p>
         
-<button className="btn">About Me</button>
+<button className="btn4 flex items-center justify-center">About Me
+  <span className="ml-1 mt-[2px]"><FaArrowRight /></span>
+</button>
 
         </div>
         <div className="">

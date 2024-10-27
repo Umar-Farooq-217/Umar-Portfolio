@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn4{
+  padding: 5px 10px;
+  border: 2px solid rgb(56, 11, 220);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn4::before{
+  content: '';
+  background: 
+  linear-gradient(45deg , rgb(176, 5, 34),rgb(52, 52, 224));
+  position: absolute;
+  top: 0;left: 0;
+  width: 0px;
+  height: 70px;
+  z-index: -1;
+  transition: 0.7s ease;
+}
+.btn4:hover{
+  color: #fff;
+
+}
+.btn4:hover::before{
+  width: 170px;
+  border: none;
+}
+.btn4:hover span{
+  transition:  ease .5s;
+  margin-left: 10px;
+}
