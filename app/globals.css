@@ -15,7 +15,7 @@
 .btn4::before{
   content: '';
   background: 
-  linear-gradient(45deg , rgb(176, 5, 34),rgb(52, 52, 224));
+  linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
   position: absolute;
   top: 0;left: 0;
   width: 0px;
