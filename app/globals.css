@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .btn4{
-  padding: 5px 10px;
+  padding: 3px 10px;
   border: 2px solid rgb(56, 11, 220);
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   position: relative;
   z-index: 1;
