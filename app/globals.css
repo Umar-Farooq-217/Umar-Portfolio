@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.main{
+  background: #111 url('/public/animate.jpeg') no-repeat fixed center cover;
+  
+}
+
 .btn4{
   padding: 3px 10px;
   border: 2px solid rgb(56, 11, 220);
-  border-radius: 20px;
+  border-radius: 7px;
   font-size: 14px;
   font-weight: bold;
   position: relative;
+  background: 
+  linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
   z-index: 1;
   overflow: hidden;
 }
-.btn4::before{
+/* .btn4::before{
   content: '';
   background: 
   linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
@@ -30,7 +37,7 @@
 .btn4:hover::before{
   width: 170px;
   border: none;
-}
+} */
 .btn4:hover span{
   transition:  ease .5s;
   margin-left: 10px;
