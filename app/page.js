@@ -1,7 +1,10 @@
+'use client'
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import './globals.css'
+import { useState } from "react";
 export default function Home() {
+  const [open,setOpen] = useState(true)
   return (
     <div className="bg-[#111] main text-white min-h-screen">
       <section className="max-w-[1500px] m-auto ">
