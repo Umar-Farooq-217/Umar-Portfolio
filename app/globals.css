@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .main{
-  background: #111 url('/public/animate.jpeg') no-repeat fixed center cover;
+  background:  url('/public/bf.webp') no-repeat  center cover;
   
 }
 
