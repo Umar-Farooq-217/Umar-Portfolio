@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Home() {
   const [open,setOpen] = useState(true)
   return (
-    <div className=" main text-white min-h-screen bg-fixed">
+    <div className=" main bg-[url('/animate.jpeg')] bg-center bg-no-repeat bg-cover bg-scroll overflow-y-auto text-white max-h-screen ">
       <section className="max-w-[1500px] m-auto ">
       <div className="flex items-center justify-between p-6" >
         <div className="">

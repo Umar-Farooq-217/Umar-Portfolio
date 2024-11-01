@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.main{
-  background:  url('/public/bf.webp') no-repeat  center cover;
+/* .main{
+  background-image:  url('/public/animate.jpeg');
   
-}
+} */
 
 .btn4{
   padding: 3px 10px;
@@ -19,7 +19,7 @@
   z-index: 1;
   overflow: hidden;
 }
-/* .btn4::before{
+.btn4::before{
   content: '';
   background: 
   linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
@@ -37,7 +37,7 @@
 .btn4:hover::before{
   width: 170px;
   border: none;
-} */
+}
 .btn4:hover span{
   transition:  ease .5s;
   margin-left: 10px;
