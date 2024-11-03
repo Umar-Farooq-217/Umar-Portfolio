@@ -3,10 +3,14 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import './globals.css'
 import { useState } from "react";
+import About from "./components/about/About";
 export default function Home() {
-  const [open,setOpen] = useState(true)
+  const [openAbout,setOpenAbout] = useState(false)
+
+  const open = ()=>setOpenAbout(true)
+  const close = ()=>setOpenAbout(false)
   return (
-    <div className=" main bg-[#111] text-white min-h-screen max-h-screen ">
+    <div className=" main bg-[#111] text-white min-h-screen max-h-screen overflow-y-auto">
     {/* // <div className=" main bg-[url('/animate.jpeg')] bg-center bg-no-repeat bg-cover bg-scroll overflow-y-auto text-white min-h-screen max-h-screen "> */}
       <section className="max-w-[1500px] m-auto ">
       <div className="flex items-center justify-between p-6" >
@@ -30,7 +34,7 @@ export default function Home() {
             Mern Stack Developer
             </p>
         
-<button className="btn4 flex items-center justify-center mt-3">About Me
+<button className="btn4 flex items-center justify-center mt-3" onClick={open}>About Me
   <span className="ml-1 mt-[2px]"><FaArrowRight /></span>
 </button>
 
@@ -61,10 +65,9 @@ export default function Home() {
       </section>
 
       {
-        open &&
-         <div className="">
-
-        </div>
+        openAbout &&
+        <About onClose={close}/>
+        
       }
      
     </div>
