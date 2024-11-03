@@ -24,8 +24,8 @@ export default function Home() {
      
       <section className="max-w-[1500px]  relative m-auto  md:py-20 sm:py-40">
         
-      <div className="absolute max-w-[1500px] md:top-[5%] sm:top-[15%] lg:right-[35%] md:right-[14%] z-0">
-          <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px] pl-10" width={400} height={400} alt="uf logo" />
+      <div className="anime absolute max-w-[1500px] md:top-[5%] sm:top-[15%] lg:right-[35%] md:right-[14%] z-0">
+          <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px] pl-10 " width={400} height={400} alt="uf logo" />
         </div>
       <div className="flex flex-wrap justify-between px-6 relative  items-center z-10">
         <div className="basis-[500px]  py-5">

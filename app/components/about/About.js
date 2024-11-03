@@ -1,10 +1,34 @@
 import React from 'react'
-
+import './../../globals.css'
 export default function About({onClose}) {
   return (
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente libero corrupti optio vel quo eius fugit, quos quas unde deleniti placeat explicabo accusantium provident expedita eaque atque voluptates ut corporis. Natus possimus voluptatem sequi praesentium eaque accusantium rem id aperiam mollitia, repudiandae nostrum pariatur?</p>
-      <button onClick={onClose}>close</button>
+    <div className='absolute top-10 left-5 border-[4px] border-red-400 aboutImg bg-blend-color-burn'>
+      <button className='btn4' onClick={onClose}>Close</button>
+      <h1 className="">About My Qualification</h1>
+      <div className="">
+        <h1 className="">Matric</h1>
+        <p className="">2020</p>
+        <p className="">Marks : 886</p>
+      </div>
+      <div className="">
+        <h1 className="">F.Sc Medical</h1>
+        <p className="">2022</p>
+        <p className="">Marks : 886</p>
+      </div>
+
+      <div className="">
+        <h1 className="">Web & Mobile App Development</h1>
+        <p className="">Duration 1 Year 2022-2023</p>
+        <p className="">Institute : SAYLANI MASS IT PROGRAM</p>
+
+      </div>
+      <div className="">
+        <h1 className="">FrameWork : React jS</h1>
+        <p className="">Database : Mongodb + Firebase</p>
+        <p className="">CMS : Contentful cms + Sanity cms</p>
+      </div>
+      
+
     </div>
   )
 }
