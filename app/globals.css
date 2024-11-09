@@ -49,12 +49,7 @@
 
 .box {
   position: relative;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+ 
   overflow: hidden;
   border-radius: 20px;
 }
@@ -62,9 +57,9 @@
 .box::before {
   content: '';
   position: absolute;
-  width: 200px;
+  width: auto;
   height: 140%;
-  background: linear-gradient(rgb(116, 52, 233), rgb(192, 4, 176));
+  background: linear-gradient(rgb(38, 3, 211), rgb(192, 4, 176));
   animation: animate 4s infinite linear;
 }
 

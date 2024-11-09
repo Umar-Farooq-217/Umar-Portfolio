@@ -2,9 +2,10 @@ import React from 'react'
 import './../../globals.css'
 export default function About({onClose}) {
   return (
-    <div className='absolute top-10 left-5 border-[4px] border-red-400 aboutImg bg-blend-color-burn'>
+    <div className='absolute top-10 left-5 border-[4px] border-red-400 text-white aboutImg bg-blend-color-burn'>
       <button className='btn4' onClick={onClose}>Close</button>
       <h1 className="">About Umar Farooq</h1>
+      <div className="flex">
       <div className="box">
         <h1 className="">Matric</h1>
         <p className="">2020</p>
@@ -27,7 +28,7 @@ export default function About({onClose}) {
         <p className="">Database : Mongodb + Firebase</p>
         <p className="">CMS : Contentful cms + Sanity cms</p>
       </div>
-      
+      </div>
 
     </div>
   )
