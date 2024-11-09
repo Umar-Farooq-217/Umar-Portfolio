@@ -7,79 +7,47 @@
   
 } */
 
-.btn4{
+.btn4 {
   padding: 3px 10px;
   border: 2px solid rgb(56, 11, 220);
   border-radius: 7px;
   font-size: 14px;
   font-weight: bold;
   position: relative;
-  background: 
-  linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
+  background:
+    linear-gradient(45deg, rgb(227, 9, 191), rgb(7, 7, 212));
   z-index: 1;
   overflow: hidden;
 }
-.btn4::before{
+
+.btn4::before {
   content: '';
-  background: 
-  linear-gradient(45deg , rgb(227, 9, 191),rgb(7, 7, 212));
+  background:
+    linear-gradient(45deg, rgb(227, 9, 191), rgb(7, 7, 212));
   position: absolute;
-  top: 0;left: 0;
+  top: 0;
+  left: 0;
   width: 0px;
   height: 70px;
   z-index: -1;
   transition: 0.7s ease;
 }
-.btn4:hover{
+
+.btn4:hover {
   color: #fff;
 
 }
-.btn4:hover::before{
+
+.btn4:hover::before {
   width: 170px;
   border: none;
 }
-.btn4:hover span{
-  transition:  ease .5s;
+
+.btn4:hover span {
+  transition: ease .5s;
   margin-left: 10px;
 
 }
 
 
 
-
-.box {
-  position: relative;
- 
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.box::before {
-  content: '';
-  position: absolute;
-  width: auto;
-  height: 140%;
-  background: linear-gradient(rgb(38, 3, 211), rgb(192, 4, 176));
-  animation: animate 4s infinite linear;
-}
-
-.box::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  background: black;
-  border-radius: 15px;
-
-
-}
-
-@keyframes animate {
-  0% {
-      transform: rotate(0deg);
-  }
-
-  100% {
-      transform: rotate(360deg);
-  }
-
-}

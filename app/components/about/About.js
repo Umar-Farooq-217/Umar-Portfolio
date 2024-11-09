@@ -4,12 +4,12 @@ export default function About({onClose}) {
   return (
     <div className='absolute top-10 left-5 border-[4px] border-red-400 text-white aboutImg bg-blend-color-burn'>
       <button className='btn4' onClick={onClose}>Close</button>
-      <h1 className="">About Umar Farooq</h1>
+      <h1 className="text-5xl text-center font-bold bg-gradient-to-l from-blue-700 to-pink-600">About Umar Farooq</h1>
       <div className="flex">
-      <div className="box">
-        <h1 className="">Matric</h1>
-        <p className="">2020</p>
-        <p className="">Marks : 886</p>
+      <div className="box  ">
+        <h1 className="z-10">Matric</h1>
+        <p className="z-10">2020</p>
+        <p className="z-10">Marks : 886</p>
       </div>
       <div className="box">
         <h1 className="">F.Sc Medical</h1>
