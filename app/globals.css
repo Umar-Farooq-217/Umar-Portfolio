@@ -52,5 +52,35 @@
 
 .box{
   position: relative;
-  
+  overflow: hidden;
+
+}
+.box::before{
+  content: '';
+  position: absolute;
+  bottom:500 ;left: 0;
+  width: 200px;
+  height: 700px;
+  background: linear-gradient(rgb(116, 52, 233), rgb(192, 4, 176));
+  animation: animate 2s linear infinite;
+  z-index: 1;
+}
+.box::after {
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 5px;
+  border-radius: 15px;
+z-index: 1;
+
+}
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+
 }
