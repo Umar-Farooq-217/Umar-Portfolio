@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
 
@@ -67,6 +68,11 @@ export default function Home() {
       {
         openAbout &&
         <About onClose={close}/>
+        
+      }
+      {
+        openAbout &&
+        <Projects onClose={close}/>
         
       }
     
