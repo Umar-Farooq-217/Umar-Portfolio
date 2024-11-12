@@ -7,7 +7,10 @@ import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
+  const [openProjects,setOpenProjects]=useState(false)
 
+  const projectsOpen = ()=>setOpenProjects(true)
+  const projectsClose = ()=>setOpenProjects(false)
   const open = ()=>setOpenAbout(true)
   const close = ()=>setOpenAbout(false)
   return (
