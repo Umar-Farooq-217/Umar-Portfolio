@@ -69,13 +69,19 @@ export default function Home() {
       </section>
 
       {
-        openAbout &&
-        <About onClose={close}/>
+        openAbout &&<div className="">
+
+          <About onClose={close}/>
+        </div>
+
         
       }
       {
         openAbout &&
-        <Projects onClose={close}/>
+        <div className="">
+
+          <Projects onClose={close}/>
+        </div>
         
       }
     
