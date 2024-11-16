@@ -14,23 +14,23 @@ export default function Home() {
   const open = ()=>setOpenAbout(true)
   const close = ()=>setOpenAbout(false)
   return (
-    <div className=" main bg-[#111] text-white min-h-screen max-h-screen overflow-y-auto">
+    <div className=" main bg-[#111] text-white h-screen ">
       <section className="max-w-[1500px] m-auto ">
-      <div className="flex items-center justify-between p-6" >
+      <div className="flex items-center justify-between px-6 py-3" >
         <div className="">
-          <Image src='/umar.svg' className="text-white" height={50} width={50} alt="logo" />
+          <Image src='/umar.svg' className="text-white" height={60} width={60} alt="logo" />
         </div>
         <div className="">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-7 mr-1" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
         </div>
       </div></section>
      
-      <section className="max-w-[1500px]  relative h-screen">
+      <section className="max-w-[1500px] mx-auto   ">
         
-      <div className=" absolute max-w-[1500px] z-0">
-          <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px] pl-10 " width={400} height={400} alt="uf logo" />
-        </div>
-      <div className="flex flex-wrap justify-between px-6 relative  items-center z-10">
+      {/* <div className=" absolute max-w-[1500px] z-0">
+          <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px]  " width={400} height={300} alt="uf logo" />
+        </div> */}
+      <div className=" flex   justify-between   z-10">
         <div className="basis-[500px]  py-5">
           <h1 className='text-5xl  font-bold font-serif z-10 '>Umar Farooq</h1>
           <p className="text-xl  font-bold font-sans mt-2 z-10 ">
@@ -63,11 +63,11 @@ export default function Home() {
 </div>
         </div>
       </div></section>
-      <section className=" flex justify-center ">
+      <section className=" ">
         <button className="btn4 flex items-center justify-center"> Latest Projects<span className="ml-1 mt-[2px]"><FaArrowRight /></span></button>
       </section>
 
-      {
+      {/* {
         openAbout && <div className="">
 
           <About onClose={close}/>
@@ -82,7 +82,7 @@ export default function Home() {
           <Projects onClose={projectsClose}/>
         </div>
         
-      }
+      } */}
     
     </div>
   );
