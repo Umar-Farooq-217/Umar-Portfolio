@@ -15,7 +15,6 @@ export default function Home() {
   const close = ()=>setOpenAbout(false)
   return (
     <div className=" main bg-[#111] text-white min-h-screen max-h-screen overflow-y-auto">
-    {/* // <div className=" main bg-[url('/animate.jpeg')] bg-center bg-no-repeat bg-cover bg-scroll overflow-y-auto text-white min-h-screen max-h-screen "> */}
       <section className="max-w-[1500px] m-auto ">
       <div className="flex items-center justify-between p-6" >
         <div className="">
@@ -26,9 +25,9 @@ export default function Home() {
         </div>
       </div></section>
      
-      <section className="max-w-[1500px]  relative m-auto  md:py-20 sm:py-40">
+      <section className="max-w-[1500px]  relative h-screen">
         
-      <div className="anime absolute max-w-[1500px] md:top-[5%] sm:top-[15%] lg:right-[35%] md:right-[14%] z-0">
+      <div className=" absolute max-w-[1500px] z-0">
           <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px] pl-10 " width={400} height={400} alt="uf logo" />
         </div>
       <div className="flex flex-wrap justify-between px-6 relative  items-center z-10">
@@ -64,7 +63,7 @@ export default function Home() {
 </div>
         </div>
       </div></section>
-      <section className=" flex justify-center md:mt-32 sm:mt-5">
+      <section className=" flex justify-center ">
         <button className="btn4 flex items-center justify-center"> Latest Projects<span className="ml-1 mt-[2px]"><FaArrowRight /></span></button>
       </section>
 
