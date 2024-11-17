@@ -25,12 +25,12 @@ export default function Home() {
         </div>
       </div></section>
      
-      <section className="max-w-[1500px] mx-auto   ">
+      <section className="max-w-[1500px] mx-auto  relative ">
         
-      {/* <div className=" absolute max-w-[1500px] z-0">
-          <Image src='/umar.svg' className="md:w-[500px] sm:w-[500px]  " width={400} height={300} alt="uf logo" />
-        </div> */}
-      <div className=" flex   justify-between   z-10">
+      <div className=" absolute top-0 left-1/2 md:top-4 -translate-x-1/2 max-w-[1500px] z-0">
+          <Image src='/umar.svg' className="md:w-[500px] h-auto sm:w-[500px]  " width={400} height={300} alt="uf logo" />
+        </div>
+      <div className=" flex   justify-between   z-10 relative">
         <div className="basis-[500px]  py-5">
           <h1 className='text-5xl  font-bold font-serif z-10 '>Umar Farooq</h1>
           <p className="text-xl  font-bold font-sans mt-2 z-10 ">
@@ -63,7 +63,7 @@ export default function Home() {
 </div>
         </div>
       </div></section>
-      <section className=" ">
+      <section className="max-w-[1500px] flex justify-center ">
         <button className="btn4 flex items-center justify-center"> Latest Projects<span className="ml-1 mt-[2px]"><FaArrowRight /></span></button>
       </section>
 
