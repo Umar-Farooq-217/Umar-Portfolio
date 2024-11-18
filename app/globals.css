@@ -11,7 +11,7 @@
   font-weight: bold;
   position: relative;
   background:
-    linear-gradient(45deg, rgb(227, 9, 191), rgb(7, 7, 212));
+    linear-gradient(45deg, #e309bf, #0707d4);
   z-index: 1;
   overflow: hidden;
 }

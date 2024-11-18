@@ -5,6 +5,7 @@ import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
   const [openProjects,setOpenProjects]=useState(false)
@@ -24,9 +25,10 @@ export default function Home() {
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-7 mr-1" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
         </div>
       </header>
-      <div className="max-w-[1500px] mx-auto  relative px-6 top-10 overflow-hidden ">
+      <div id="wrapper-canvas" className=""></div>
+      <div className="max-w-[1500px] mx-auto  relative px-6 top-10 py-36 ">
         
-        <div className=" absolute top-0 left-1/2 md:top-4 -translate-x-1/2 max-w-[1500px] z-0">
+        <div className=" absolute top-0 left-1/2  -translate-x-1/2 max-w-[1500px] z-0">
             <Image src='/umar.svg' className="md:w-[500px] h-auto sm:w-[500px]  " width={400} height={300} alt="uf logo" />
           </div>
         <div className=" flex   justify-between   z-10 relative">
@@ -35,10 +37,9 @@ export default function Home() {
             <p className="text-xl  font-bold font-sans mt-2 z-10 ">
               Mern Stack Developer
               </p>
+              <button onClick={open} className="bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-200 rounded-sm group flex items-center justify-center relative group "> About Me<span className=" group-hover:left-[110px] transition-all ease-in-out duration-200 absolute top-[9px] left-[102px] text-[20px]"><FaArrowRight /></span></button>
           
-  <button className="btn4 flex items-center justify-center mt-3" onClick={open}>About Me
-    <span className="ml-1 mt-[2px]"><FaArrowRight /></span>
-  </button>
+  
   
           </div>
           <div className="flex flex-col grow-1 gap-y-3 relative basis-[35px] ">
@@ -62,8 +63,8 @@ export default function Home() {
   </div>
           </div>
         </div></div>
-        <div className="max-w-[1500px] flex justify-center ">
-          <button className="btn4 flex items-center justify-center"> Latest Projects<span className="ml-1 mt-[2px]"><FaArrowRight /></span></button>
+        <div className="max-w-[1500px] flex justify-center mt-16">
+          <button className="bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-200 rounded-sm group flex items-center justify-center relative "> Latest Projects<span className="ml-1 mt-[2px] absolute top-6  rotate-90 group-hover:top-8 transition-all ease-in-out duration-200 text-[20px]"><FaArrowRight /></span></button>
         </div>
       
       </section>
