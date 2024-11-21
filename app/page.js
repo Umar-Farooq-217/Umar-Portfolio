@@ -5,6 +5,7 @@ import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+import ParticleBackground from "./components/particleBackground/particleBackground";
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
@@ -16,6 +17,10 @@ export default function Home() {
   const close = ()=>setOpenAbout(false)
   return (
     <div className=" bg-[#111] text-white  h-screen  ">
+      <div>
+        <ParticleBackground/>
+
+      </div>
       <section className="max-w-[1500px] m-auto ">
       <header className="flex items-center justify-between px-6 py-3" >
         <div className="">
