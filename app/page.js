@@ -5,7 +5,6 @@ import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
-import ParticleBackground from "./components/particleBackground/particleBackground";
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
