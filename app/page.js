@@ -5,6 +5,8 @@ import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+import MatterScene from "./components/matterScene/MatterScene";
+import Matter from 'matter-js';
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
@@ -17,7 +19,7 @@ export default function Home() {
   return (
     <div className=" bg-[#111] text-white  h-screen  ">
       <div>
-        <ParticleBackground/>
+      <MatterScene/>
 
       </div>
       <section className="max-w-[1500px] m-auto ">
