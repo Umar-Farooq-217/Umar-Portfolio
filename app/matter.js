@@ -1,3 +1,5 @@
+import $ from 'jquery';
+import Matter from 'matter-js';
 var canvas = $("#wrapper-canvas").get(0);
 
 var dimensions = {

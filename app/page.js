@@ -7,6 +7,9 @@ import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import MatterScene from "./components/matterScene/MatterScene";
 import './matter'
+import Matter from 'matter-js';
+import 'matter-attractors';
+import 'matter-wrap';
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
@@ -43,7 +46,7 @@ export default function Home() {
             <p className="text-xl  font-bold font-sans mt-2 z-10 ">
               Mern Stack Developer
               </p>
-              <button onClick={open} className="bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-200 rounded-sm group flex items-center justify-center relative group "> About Me<span className=" group-hover:left-[110px] transition-all ease-in-out duration-200 absolute top-[9px] left-[102px] text-[20px]"><FaArrowRight /></span></button>
+              <button onClick={open} className="bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-300 rounded-sm group flex items-center justify-center relative group mt-3 "> About Me<span className=" group-hover:left-[110px] transition-all ease-in-out duration-300 absolute top-[7px] left-[102px] text-[20px]"><FaArrowRight /></span></button>
           
   
   
@@ -93,6 +96,7 @@ export default function Home() {
         </div>
         
       } */}
+     
     
     </div>
   );

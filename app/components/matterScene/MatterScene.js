@@ -1,77 +1,62 @@
-"use client";
-import React, { useEffect, useRef } from "react";
-import Matter from "matter-js";
+// "use client";
+// import { useEffect, useRef } from 'react';
+// import Matter from 'matter-js';
+// import 'matter-attractors';
+// import 'matter-wrap';
 
-const MatterScene = () => {
-  const canvasRef = useRef(null);
+// export default function MatterScene() {
+//   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
+//   useEffect(() => {
+//     // Ensure plugins are registered only in the browser
+//     if (typeof window !== 'undefined') {
+//       Matter.use('matter-attractors');
+//       Matter.use('matter-wrap');
 
-    if (!canvas) return;
+//       // Set up Matter.js engine, renderer, and world
+//       const engine = Matter.Engine.create();
+//       const world = engine.world;
 
-    // Matter.js modules
-    const { Engine, Render, World, Bodies, Runner } = Matter;
+//       const render = Matter.Render.create({
+//         element: canvasRef.current,
+//         engine: engine,
+//         options: {
+//           width: 800,
+//           height: 600,
+//           wireframes: false,
+//         },
+//       });
 
-    // Create engine
-    const engine = Engine.create();
-    const world = engine.world;
+//       // Add example bodies
+//       const circle = Matter.Bodies.circle(400, 200, 50, {
+//         plugin: {
+//           attractors: [
+//             (bodyA, bodyB) => {
+//               return {
+//                 x: (bodyA.position.x - bodyB.position.x) * 0.0001,
+//                 y: (bodyA.position.y - bodyB.position.y) * 0.0001,
+//               };
+//             },
+//           ],
+//         },
+//       });
 
-    // Create renderer
-    const render = Render.create({
-      element: canvas,
-      engine: engine,
-      options: {
-        width: window.innerWidth,
-        height: window.innerHeight,
-        wireframes: false,
-        background: "#111",
-      },
-    });
+//       const ground = Matter.Bodies.rectangle(400, 600, 810, 60, { isStatic: true });
 
-    Render.run(render);
+//       Matter.World.add(world, [circle, ground]);
+//       Matter.Render.run(render);
+//       Matter.Runner.run(Matter.Runner.create(), engine);
 
-    // Create runner
-    const runner = Runner.create();
-    Runner.run(runner, engine);
+//       // Cleanup
+//       return () => {
+//         Matter.Render.stop(render);
+//         Matter.World.clear(world);
+//         Matter.Engine.clear(engine);
+//         render.canvas.remove();
+//         render.textures = {};
+//       };
+//     }
+//   }, []);
 
-    // Add bodies
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-
-    // Walls
-    const walls = [
-      Bodies.rectangle(width / 2, 0, width, 50, { isStatic: true }), // Top
-      Bodies.rectangle(width / 2, height, width, 50, { isStatic: true }), // Bottom
-      Bodies.rectangle(0, height / 2, 50, height, { isStatic: true }), // Left
-      Bodies.rectangle(width, height / 2, 50, height, { isStatic: true }), // Right
-    ];
-
-    World.add(world, walls);
-
-    // Falling circles
-    const createCircle = () =>
-      Bodies.circle(Math.random() * width, -50, Math.random() * 20 + 10, {
-        restitution: 0.8,
-        render: {
-          fillStyle: `hsl(${Math.random() * 360}, 80%, 60%)`,
-        },
-      });
-
-    const circles = Array.from({ length: 20 }, createCircle);
-    World.add(world, circles);
-
-    // Clean up on unmount
-    return () => {
-      Render.stop(render);
-      Runner.stop(runner);
-      World.clear(world);
-      Engine.clear(engine);
-      canvas.innerHTML = "";
-    };
-  }, []);
-
-  return <div ref={canvasRef}></div>;
-};
-
-export default MatterScene;
+//   return <div ref={canvasRef}></div>;
+// }
