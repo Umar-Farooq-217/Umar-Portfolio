@@ -6,7 +6,7 @@ import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import MatterScene from "./components/matterScene/MatterScene";
-import Matter from 'matter-js';
+import './matter'
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
@@ -18,10 +18,10 @@ export default function Home() {
   const close = ()=>setOpenAbout(false)
   return (
     <div className=" bg-[#111] text-white  h-screen  ">
-      <div>
-      <MatterScene/>
+     
+      <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
 
-      </div>
+      
       <section className="max-w-[1500px] m-auto ">
       <header className="flex items-center justify-between px-6 py-3" >
         <div className="">
