@@ -5,11 +5,8 @@ import './globals.css'
 import { useState } from "react";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
-import MatterScene from "./components/matterScene/MatterScene";
-import './matter'
-import Matter from 'matter-js';
-import 'matter-attractors';
-import 'matter-wrap';
+
+
 
 export default function Home() {
   const [openAbout,setOpenAbout] = useState(false)
@@ -77,6 +74,7 @@ export default function Home() {
         </div>
       
       </section>
+    
      
      
 
