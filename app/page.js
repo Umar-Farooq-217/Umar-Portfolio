@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </header>
       <div id="wrapper-canvas" className=""></div>
-      <div className="max-w-[1500px] mx-auto  relative px-6 top-10 py-36 ">
+      <div className="max-w-[1500px] mx-auto  relative px-6 top-10 md:py-36 sm:py-20 ">
         
         <div className=" absolute top-0 left-1/2  -translate-x-1/2 max-w-[1500px] z-0">
             <Image src='/umar.svg' className="md:w-[500px] h-auto sm:w-[500px]  " width={400} height={300} alt="uf logo" />
@@ -78,7 +78,7 @@ export default function Home() {
      
      
 
-      {/* {
+      {
         openAbout && <div className="">
 
           <About onClose={close}/>
@@ -93,7 +93,7 @@ export default function Home() {
           <Projects onClose={projectsClose}/>
         </div>
         
-      } */}
+      } 
      
     
     </div>
