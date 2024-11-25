@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import './../../globals.css'
 export default function About({ onClose }) {
   return (
@@ -14,18 +15,18 @@ export default function About({ onClose }) {
 </div>
 
 
-          <div className="flex flex-wrap gap-2">
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Tailwind CSS</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Sanity CMS</p>
-            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Contentful CMS</p>
+          <div className="grid md:grid-cols-3  gap-2 mt-5">
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
+            <p className="flex-grow-0 border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Tailwind</p>
+            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
+            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
+            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
+            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Sanity</p>
+            <p className=" border border-white-4 py-1 rounded-lg w-full text-center font-bold tracking-wide">#Contentful</p>
        
            
 
@@ -33,7 +34,9 @@ export default function About({ onClose }) {
 
 
         </div>
-        <div className=""></div></div>
+        <div className="flex justify-center items-start mt-9">
+          <Image className='aspect-auto rounded-xl ' src='/man.jpeg' width={300} height={300} alt='A coder Photo' />
+          </div></div>
 
 
 
