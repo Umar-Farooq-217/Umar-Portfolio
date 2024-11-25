@@ -9,10 +9,23 @@ export default function About({ onClose }) {
           <h1 className="text-3xl  font-bold  "> Umar Farooq </h1>
           <p className='text-xl pt-2 text-justify'>I help bussiness owners and busy web developers to design and develop creative websites that fits their vision and attracts the visitors to stay forever. Technologies and tools that I use for create such awesome websites   </p>
         
+<div className="">
+
+</div>
 
 
-
-          <div className="">
+          <div className="flex flex-wrap gap-2">
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Tailwind CSS</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Sanity CMS</p>
+            <p className="flex-grow-1 border border-white-4 py-2 px-4 rounded-lg w-full text-center font-bold tracking-wide">#Contentful CMS</p>
        
            
 
