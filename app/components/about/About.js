@@ -8,25 +8,25 @@ export default function About({ onClose }) {
       <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-5">
         <div className="pt-8">
           <h1 className="text-3xl  font-bold  "> Umar Farooq </h1>
-          <p className='text-xl pt-2 text-justify'>I help bussiness owners and busy web developers to design and develop creative websites that fits their vision and attracts the visitors to stay forever. Technologies and tools that I use for create such awesome websites   </p>
+          <h1 className='text-xl pt-2 text-justify'>I help bussiness owners and busy web developers to design and develop creative websites that fits their vision and attracts the visitors to stay forever. Technologies and tools that I use for create such awesome websites   </h1>
         
 <div className="">
 
 </div>
 
 
-          <div className="grid md:grid-cols-3  gap-2 mt-5">
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
-            <p className="flex-grow-0 border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Tailwind</p>
-            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
-            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
-            <p className=" border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
-            <p className=" border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Sanity</p>
-            <p className=" border border-white-4 py-1 rounded-lg w-full text-center font-bold tracking-wide">#Contentful</p>
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-2 mt-5">
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Tailwind</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Sanity</p>
+            <p className="hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1 rounded-lg w-full text-center font-bold tracking-wide">#Contentful</p>
        
            
 
@@ -35,7 +35,7 @@ export default function About({ onClose }) {
 
         </div>
         <div className="flex justify-center items-start mt-9">
-          <Image className='aspect-auto rounded-xl ' src='/man.jpeg' width={300} height={300} alt='A coder Photo' />
+          <Image className='aspect-square rounded-xl ' src='/man.jpeg' width={300} height={300} alt='A coder Photo' />
           </div></div>
 
 
