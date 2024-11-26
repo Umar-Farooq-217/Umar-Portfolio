@@ -46,3 +46,12 @@
 }
 
 /* tools------------- */
+.container{
+   
+    margin: auto;
+display: flex;
+flex-wrap: wrap;
+gap: 1em;}
+.container > *{
+    flex: 1;
+}
