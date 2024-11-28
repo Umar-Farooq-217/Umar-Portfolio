@@ -1,19 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Projects() {
   return (
     <div className=''>
-      <h1>This is Projects</h1>
-      <div className="grid md:grid-cols-2 sm:grid-cols-1">
-        <div className="">
-
-        </div>
-        <div className="relative w-[600px] h-[400px]  bg-[url('/laptop1.jpeg')] bg-no-repeat bg-cover bg-center bg-white overflow-hidden">
-          <div className="absolute  ">
-            <iframe className='w-full h-full' src='https://hotel-project-gilt.vercel.app/' ></iframe>
-          </div>
-        </div>
-      </div>
+     <h1 className='text-3xl font-bold text-center mt-6'>I have no Industry level projets </h1>
     </div>
   )
 }
