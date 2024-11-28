@@ -69,8 +69,8 @@ export default function Home() {
   </div>
           </div>
         </div></div>
-        <div className="max-w-[1500px] flex justify-center mt-16">
-          <button className="bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-200 rounded-sm group flex items-center justify-center relative "> Latest Projects<span className="ml-1 mt-[2px] absolute top-6  rotate-90 group-hover:top-8 transition-all ease-in-out duration-200 text-[20px]"><FaArrowRight /></span></button>
+        <div className="max-w-[1500px] flex justify-center mt-10  ">
+          <button onClick={projectsOpen} className=" bg-gradient-to-r from-[#0707d4] to-[#e309bf] font-bold text-[16px] px-4 py-1 hover:scale-110 transition-all ease-in-out duration-200 rounded-sm group flex items-center justify-center relative "> Latest Projects<span className="ml-1 mt-[2px] absolute top-6  rotate-90 group-hover:top-8 transition-all ease-in-out duration-200 text-[20px]"><FaArrowRight /></span></button>
         </div>
       
       </section>
