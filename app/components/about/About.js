@@ -16,17 +16,17 @@ export default function About({ onClose }) {
 
 
           <div className="container pt-5">
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Tailwind</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Sanity</p>
-            <p className="px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1 rounded-lg w-full text-center font-bold tracking-wide">#Contentful</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#HTML</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#CSS</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Javascript</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Bootstrap</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Tailwind</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#React.js </p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Next.js</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Mongo-db</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4  py-1 rounded-lg w-full text-center font-bold tracking-wide">#Firebase</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1  rounded-lg w-full text-center font-bold tracking-wide">#Sanity</p>
+            <p className="cursor-pointer px-2 hover:bg-white hover:text-black transition-all ease-in 2s  shadow-white shadow-md border border-white-4 py-1 rounded-lg w-full text-center font-bold tracking-wide">#Contentful</p>
        
            
 
@@ -34,8 +34,8 @@ export default function About({ onClose }) {
 
 
         </div>
-        <div className=" mt-9">
-          <Image className='w-full h-full rounded-xl ' src='/man.jpeg' width={300} height={300} alt='A coder Photo' />
+        <div className=" mt-9 flex mx-auto">
+          <Image className='aspect-square rounded-xl ' src='/languages.webp' width={300} height={300} alt='A coder Photo' />
           </div></div>
 
 
